@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black panther</title>
+    <style>
+         *{
+            padding: 0%; margin: 0%;
+            box-sizing: border-box;
+        }
+        :root{
+            --main-cls:#4b4a4a;
+            --gradient:linear-gradient(to right,  rgba(0,0,0,1) 0%, rgba(251,247,247,.1) 200%);
+            --text-cls:#e4cf18;
+            --bl:#000;
+            --sm:#beb8b8;
+            --shadow:0px 0px 15px 2px rgba(0, 0, 0,0.3);
+        }
+        .gallary{
+            background-color: #4b4a4a;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .card{
+            background-image: var(--gradient);
+            width: 30vw;
+           aspect-ratio: 2;
+            position: relative;
+            padding: 2%;
+            border-radius: 1rem;
+            
+        }
+        h1{
+            color: #e4cf18;
+            font-size: 2vw;
+            
+        }
+
+    p{
+            color: #a5a496;
+            font-size: 1vw;
+            width: 70%;
+            display: none;
+            transition: all .10s linear;
+
+        }
+        img{
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all .3s ease-in-out;
+        }
+
+
+        .card:hover{
+           &   img{
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%,-50%);
+        }
+       & p{
+            color: #a5a496;
+          
+            width: 70%;
+            display: block;
+            clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+
+        }
+
+        }
+        @media screen and (max-width: 1200px){
+            .card{
+            background-image: var(--gradient);
+            width: 50vw;
+           aspect-ratio: 2;
+            position: relative;
+            
+        }
+     
+      
+        }
+        @media screen and (max-width: 700px){
+            .card{
+            background-image: var(--gradient);
+            width: 80vw;
+           aspect-ratio: 2;
+            position: relative;
+            
+        }
+        h1{
+            color: #e4cf18;
+            font-size: 3.5vw;
+        }
+        p{
+            font-size: 3.5vw;
+        }
+      
+        }
+    </style>
+</head>
+<body>
+    <section class="gallary">
+        <div class="card">
+            <div class="card-text">
+                <h1>
+                    welcome
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur odit velit dolores unde mollitia.
+                </p>
+            </div>
+            <figure><img src="img/pngwing.com (9).png" alt="" width="100"></figure>
+        </div>
+    </section>
+</body>
+</html>
